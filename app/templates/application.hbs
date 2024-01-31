@@ -1,2 +1,11 @@
-{{page-title "Application"}}
-{{outlet}}
+<div class="flash-messages">
+  {{#each this.flashMessageService.queue as |message|}}
+    <p>
+      {{message.text}}
+    </p>
+  {{/each}}
+</div>
+
+<button type="button" {{on "click" this.doSomething}}>
+  Do something
+</button>
