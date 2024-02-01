@@ -1,0 +1,14 @@
+diff --git a/qunit/qunit.js b/qunit/qunit.js
+index abdd9ab42b86c93c096e006cd134ebf33a8e5a5d..fc5ec59724344078d817b6c2ccdd98d17a7d5508 100644
+--- a/qunit/qunit.js
++++ b/qunit/qunit.js
+@@ -6052,9 +6052,6 @@
+       }
+       return ret;
+     };
+-    window$1.addEventListener('unhandledrejection', function (event) {
+-      QUnit.onUncaughtException(event.reason);
+-    });
+   })();
+ 
+   /*
